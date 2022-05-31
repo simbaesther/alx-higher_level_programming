@@ -8,5 +8,5 @@ if ((number % 10) > 5):
     print(f"{str1} {number} {str2} {number % 10} and is greater than 5")
 elif ((number % 10) == 0):
     print(f"{str1} {number} {str2} {number % 10} and is")
-elif ((number % 10) <6 and != 0):
+elif ((number % 10) <6 & != 0):
     print(f"{str1} {number} {str2} {number % 10} and is less than 6and not 0")
