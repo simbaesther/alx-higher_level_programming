@@ -9,5 +9,5 @@ for c in str:
         # convert lowercase to upercase
         c = chr(ord(c) - 32)
         # print the formatted string
-        print("{}".format(c), end="")
-    print("")
+    print("{}".format(c), end="")
+print("")
