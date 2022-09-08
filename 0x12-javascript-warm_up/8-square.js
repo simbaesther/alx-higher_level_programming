@@ -1,13 +1,9 @@
 #!/usr/bin/node
-
-const size = Number(process.argv[2]);
-
-if (size) {
-  for (let i = 0; i < size; i++) {
-    let line = '';
-    for (let c = 0; c < size; c++) line += 'X';
-    console.log(line);
+if (isNaN(process.argv[2])) console.log('Missing size');
+const num = Number(process.argv[2]);
+for (let i = 0; i < num; i++) {
+  for (let j = 0; j < num; j++) {
+    process.stdout.write('X');
   }
-} else {
-  console.log('Missing size');
+  console.log('');
 }

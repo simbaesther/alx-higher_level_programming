@@ -1,14 +1,7 @@
 #!/usr/bin/node
-
-const intOne = Number(process.argv[2]);
-const intTwo = Number(process.argv[3]);
-
 function add (a, b) {
-  console.log(a + b);
+  const sum = a + b;
+  console.log(sum);
 }
 
-if (intOne && intTwo) {
-  add(intOne, intTwo);
-} else {
-  console.log('NaN');
-}
+add(Number(process.argv[2]), Number(process.argv[3]));
